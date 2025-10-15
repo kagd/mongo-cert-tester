@@ -233,7 +233,7 @@ class Program
       var logPath = "lastRun.txt";
       _logWriter = new StreamWriter(logPath, false); // false = overwrite existing file
       _logWriter.AutoFlush = true;
-      
+
       // Write header with timestamp
       var timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
       _logWriter.WriteLine($"=== MongoDB Connection Diagnostic Tool - Run started at {timestamp} ===");
@@ -249,7 +249,7 @@ class Program
   {
     // Write to console
     Console.WriteLine(message);
-    
+
     // Write to log file if available
     try
     {
@@ -265,7 +265,7 @@ class Program
   {
     // Write to console
     Console.Write(message);
-    
+
     // Write to log file if available
     try
     {
